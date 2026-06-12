@@ -34,7 +34,7 @@ const database = [
       vagas: 4, // aprox.
       candidatosPorVaga: 39.000,
       notaMinima: 3952,
-      salarioMedio: 7000 // R$ estimado TI
+      salarioMedio: 15000 // R$ estimado TI
     },
     {
       ano: 2025,
@@ -67,7 +67,7 @@ const database = [
       salarioMedio: 4500
     },
   
-    // UEPG 2024 (para comparação)
+    // UEPG 2024 (para comparação)!!!!!!!!!!!!!!
     {
       cota: "Publica",
       ano: 2024,
@@ -105,64 +105,29 @@ const database = [
       ano: 2024,
       instituicao: "UEPG",
       curso: "Turismo",
-      candidatos: 1, // aprox. (um turno)
+      candidatos: 7, // aprox. (um turno)
       vagas: 4,
-      candidatosPorVaga: 0.250, // exemplo
-      notaMinima: 1737,
+      candidatosPorVaga: 1.750, // exemplo
+      notaMinima: 2539,
       salarioMedio: 3000
     },
     {
       ano: 2024,
       instituicao: "UEPG",
       curso: "Psicologia",
-      candidatos: 228,
-      vagas: 4,
-      candidatosPorVaga: 57.000, // dados agregados disponíveis no PDF
-      notaMinima: 4134,
-      salarioMedio: 4500
+      candidatos: --,
+      vagas: --,
+      candidatosPorVaga: --, // dados agregados disponíveis no PDF
+      notaMinima: --,
+      salarioMedio: --
     },
     {
       ano: 2024,
       instituicao: "UEPG",
       curso: "Enfermagem",
-      candidatos: 62,
+      candidatos: 82,
       vagas: 5,
-      candidatosPorVaga: 12,400, // dados agregados disponíveis no PDF
-      notaMinima: 4134,
-      salarioMedio: 4500
+      candidatosPorVaga: 16,400, // dados agregados disponíveis no PDF
+      notaMinima: 3282,
+      salarioMedio: 5000
     },
-  
-    // UTFPR-PG (exemplos 2025/1 - Campus Ponta Grossa)
-    {
-      ano: 2025,
-      instituicao: "UTFPR-PG",
-      curso: "Ciência da Computação",
-      candidatos: 264,
-      vagas: 44,
-      candidatosPorVaga: 6.00,
-      notaMinima: null, // ver maior/menor nota nos relatórios UTFPR
-      salarioMedio: 7500
-    },
-    {
-      ano: 2025,
-      instituicao: "UTFPR-PG",
-      curso: "Engenharia de Produção",
-      candidatos: 136,
-      vagas: 31,
-      candidatosPorVaga: 4.39,
-      notaMinima: null,
-      salarioMedio: 6500
-    },
-    {
-      ano: 2025,
-      instituicao: "UTFPR-PG",
-      curso: "Engenharia Mecânica",
-      candidatos: 101,
-      vagas: 31,
-      candidatosPorVaga: 3.26,
-      notaMinima: null,
-      salarioMedio: 7000
-    },
-    
-  ];
-  base; // ou export default database; (ES modules)
