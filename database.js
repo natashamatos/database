@@ -2,78 +2,134 @@
 // Fontes: Editais CPS UEPG, relatórios UTFPR, notícias oficiais (2024-2025)
 
 const database = [
-    // UEPG 2025 (exemplos principais - Medicina, Psicologia, Eng. Software etc.)
+    // UEPG 2025 (exemplos principais - Odontologia, Eng. Software, Veterinaria etc.)
+    {
+      cota: "Publica",
+      ano: 2025,
+      instituicao: "UEPG",
+      curso: "Odontologia",
+      candidatos: 90,
+      vagas: 6,
+      candidatosPorVaga: 15.000,
+      notaMinima: 3646,
+      salarioMedio: 6.200 #RS APROX EM BRASIL
+    },
+    {
+      cota: "Publica",
+      ano: 2025,
+      instituicao: "UEPG",
+      curso: "Educação Física-bachalerado",
+      candidatos: 75, // aprox.
+      vagas: 6, // aprox.
+      candidatosPorVaga: 12.500,
+      notaMinima: 2934,
+      salarioMedio: 4500 #RS APROX EM BRASIL
+    },
+    {
+      cota: "Publica",
+      ano: 2025,
+      instituicao: "UEPG",
+      curso: "Engenharia de Software",
+      candidatos: 156, // aprox.
+      vagas: 4, // aprox.
+      candidatosPorVaga: 39.000,
+      notaMinima: 3952,
+      salarioMedio: 7000 // R$ estimado TI
+    },
     {
       ano: 2025,
       instituicao: "UEPG",
-      curso: "Medicina",
-      candidatos: 2182, // aproximado total concorrentes
-      vagas: 14, // total aproximado (incl. cotas)
-      candidatosPorVaga: 114.741,
-      notaMinima: null, // varia por cota; maior nota ~6943 pontos na edição
-      salarioMedio: 12000 // R$ estimado inicial para médicos (aprox., Brasil/PR)
+      curso: "Turismo",
+      candidatos: 1, // aprox. (um turno)
+      vagas: 4,
+      candidatosPorVaga: 0.250, // exemplo
+      notaMinima: 1737,
+      salarioMedio: 3000
     },
     {
       ano: 2025,
       instituicao: "UEPG",
       curso: "Psicologia",
-      candidatos: 252, // aprox.
-      vagas: 11, // aprox.
-      candidatosPorVaga: 23.955,
-      notaMinima: null,
-      salarioMedio: 4500 // R$ estimado
+      candidatos: 228,
+      vagas: 4,
+      candidatosPorVaga: 57.000, // dados agregados disponíveis no PDF
+      notaMinima: 4134,
+      salarioMedio: 4500
     },
     {
       ano: 2025,
       instituicao: "UEPG",
-      curso: "Engenharia de Software",
-      candidatos: 176, // aprox.
-      vagas: 11, // aprox.
-      candidatosPorVaga: 15.625,
-      notaMinima: null,
-      salarioMedio: 8000 // R$ estimado TI
-    },
-    {
-      ano: 2025,
-      instituicao: "UEPG",
-      curso: "Administração",
-      candidatos: 99, // aprox. (um turno)
-      vagas: 24,
-      candidatosPorVaga: 12.375, // exemplo
-      notaMinima: null,
-      salarioMedio: 5000
-    },
-    {
-      ano: 2025,
-      instituicao: "UEPG",
-      curso: "Engenharia Civil",
-      candidatos: null,
-      vagas: null,
-      candidatosPorVaga: null, // dados agregados disponíveis no PDF
-      notaMinima: null,
-      salarioMedio: 7000
+      curso: "Enfermagem",
+      candidatos: 62,
+      vagas: 5,
+      candidatosPorVaga: 12,400, // dados agregados disponíveis no PDF
+      notaMinima: 4134,
+      salarioMedio: 4500
     },
   
     // UEPG 2024 (para comparação)
     {
+      cota: "Publica",
       ano: 2024,
       instituicao: "UEPG",
-      curso: "Medicina",
-      candidatos: 2646,
-      vagas: 27,
-      candidatosPorVaga: 98,
-      notaMinima: null,
-      salarioMedio: 12000
+      curso: "Odontologia",
+      candidatos: 96,
+      vagas: 6,
+      candidatosPorVaga: 16.000,
+      notaMinima: 3661,
+      salarioMedio: 5.300 #RS APROX EM BRASIL
+    },
+    {
+      cota: "Publica",
+      ano: 2024,
+      instituicao: "UEPG",
+      curso: "Educação Física-bachalerado",
+      candidatos: 68, // aprox.
+      vagas: 6, // aprox.
+      candidatosPorVaga: 11.333,
+      notaMinima: 2869,
+      salarioMedio: 3500 #RS APROX EM BRASIL
+    },
+    {
+      cota: "Publica",
+      ano: 2024,
+      instituicao: "UEPG",
+      curso: "Engenharia de Software",
+      candidatos: 160, // aprox.
+      vagas: 4, // aprox.
+      candidatosPorVaga: 40.000,
+      notaMinima: 3951,
+      salarioMedio: 15000 // R$ estimado TI
     },
     {
       ano: 2024,
       instituicao: "UEPG",
-      curso: "Engenharia de Software",
-      candidatos: 374,
-      vagas: 24,
-      candidatosPorVaga: 15.583,
-      notaMinima: null,
-      salarioMedio: 8000
+      curso: "Turismo",
+      candidatos: 1, // aprox. (um turno)
+      vagas: 4,
+      candidatosPorVaga: 0.250, // exemplo
+      notaMinima: 1737,
+      salarioMedio: 3000
+    },
+    {
+      ano: 2024,
+      instituicao: "UEPG",
+      curso: "Psicologia",
+      candidatos: 228,
+      vagas: 4,
+      candidatosPorVaga: 57.000, // dados agregados disponíveis no PDF
+      notaMinima: 4134,
+      salarioMedio: 4500
+    },
+    {
+      ano: 2024,
+      instituicao: "UEPG",
+      curso: "Enfermagem",
+      candidatos: 62,
+      vagas: 5,
+      candidatosPorVaga: 12,400, // dados agregados disponíveis no PDF
+      notaMinima: 4134,
+      salarioMedio: 4500
     },
   
     // UTFPR-PG (exemplos 2025/1 - Campus Ponta Grossa)
@@ -107,18 +163,6 @@ const database = [
       notaMinima: null,
       salarioMedio: 7000
     },
-    {
-      ano: 2025,
-      instituicao: "UTFPR-PG",
-      curso: "Análise e Desenvolvimento de Sistemas",
-      candidatos: null,
-      vagas: 30,
-      candidatosPorVaga: null, // dados no PDF
-      notaMinima: null,
-      salarioMedio: 6000
-    }
-    // Adicione mais entradas conforme necessário a partir dos PDFs completos
+    
   ];
-  
-  // Export para uso em Node.js ou browser
-  module.exports = database; // ou export default database; (ES modules)
+  base; // ou export default database; (ES modules)
